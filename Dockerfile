@@ -9,6 +9,8 @@ ADD . .
 
 RUN npm install
 
+RUN ifconfig
+
 RUN npm run encore:downloadMat
 
 RUN npm run encore:dbInit
