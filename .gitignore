@@ -1,0 +1,7 @@
+node_modules
+dist
+tmp
+src/core/material/*
+!src/core/material/README.md
+encoreDB
+.env
