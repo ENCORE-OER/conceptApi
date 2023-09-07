@@ -22,7 +22,7 @@ steps:
       registry: docker.polyglot-edu.com
       dockerfile: ./Dockerfile
       tags: ["${DRONE_BRANCH}"]
-      add_host: papygame.com:443
+      add_host: papygame.com:81.88.52.105
       <<: *docker_creds
     when:
       <<: *condition
