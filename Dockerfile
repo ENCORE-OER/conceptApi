@@ -9,4 +9,6 @@ ADD . .
 
 RUN npm install
 
-CMD "npm run encore:downloadMat && npm run encore:dbInit && npm run start"
+RUN npm run build
+
+CMD ["/bin/bash", "-c", "npm run encore:downloadMat && npm run encore:dbInit && npm run start"]
