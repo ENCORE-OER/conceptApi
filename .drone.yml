@@ -22,7 +22,7 @@ steps:
       registry: docker.polyglot-edu.com
       dockerfile: ./Dockerfile
       tags: ["${DRONE_BRANCH}"]
-      bip: true # get network connectivity during build time
+      add_host: papygame.com:443
       <<: *docker_creds
     when:
       <<: *condition
