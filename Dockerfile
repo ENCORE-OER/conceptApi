@@ -9,10 +9,4 @@ ADD . .
 
 RUN npm install
 
-RUN ifconfig
-
-RUN npm run encore:downloadMat
-
-RUN npm run encore:dbInit
-
-CMD [ "npm", "run", "start" ]
+CMD "npm run encore:downloadMat && npm run encore:dbInit && npm run start"
