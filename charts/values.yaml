@@ -10,9 +10,6 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
-env:
-  PORT: 5000
-
 imagePullSecrets: [{ name: docker-secret }]
 nameOverride: ""
 fullnameOverride: ""
