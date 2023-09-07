@@ -47,7 +47,7 @@ steps:
         - "url=concept.polyglot-edu.com"
         - "cfOriginKey=$CFORIGIN"
         - "dockerconfigjson=$DOCKERCONFIG"
-        - "image.repository=docker.polyglot-edu.com/encore-oer/conceptApi"
+        - "image.repository=docker.polyglot-edu.com/encore-oer/conceptapi"
         - "image.tag=${DRONE_BRANCH}"
         - "env.PORT=$PORT"
       cleanup_failed_upgrade: true
